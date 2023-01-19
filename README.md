@@ -13,6 +13,8 @@ Use your Android device to create your own plant diary.  Take photos with the on
 
 ## Storyboard
 
+![Storyboard](/MyPlantDiaryFirstScreen.png)
+
 ## Functional Requirements
 
 ### Requirement 100.0: Search for Plants
