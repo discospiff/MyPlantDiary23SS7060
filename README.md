@@ -50,3 +50,6 @@ Common: White Oak
 **Given** a feed of plant data is available
 **When** I search for “sklujapouetllkjsda;u”
 **Then** I should receive zero results (an empty list)
+
+## Class Diagram
+![Class Diagram](/Class Diagram.drawio.png)
