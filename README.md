@@ -52,4 +52,4 @@ Common: White Oak
 **Then** I should receive zero results (an empty list)
 
 ## Class Diagram
-![Class Diagram](/Class+Diagram.drawio.png)
+![Class Diagram](/ClassDiagram.drawio.png)
