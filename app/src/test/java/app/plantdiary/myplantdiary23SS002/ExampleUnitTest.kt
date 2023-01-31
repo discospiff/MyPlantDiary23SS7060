@@ -25,4 +25,9 @@ class ExampleUnitTest {
         assertEquals(7, 3+4)
     }
 
+    @Test
+    fun fourPlusFour_EqualsEight() {
+        assertEquals(8, 4+4)
+    }
+
 }
