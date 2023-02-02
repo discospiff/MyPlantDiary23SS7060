@@ -1,5 +1,6 @@
 package app.plantdiary.myplantdiary23SS002
 
+import app.plantdiary.myplantdiary23SS002.dto.Plant
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -28,6 +29,17 @@ class ExampleUnitTest {
     @Test
     fun fourPlusFour_EqualsEight() {
         assertEquals(8, 4+4)
+    }
+
+    @Test
+    fun fivePlusFour_EqualsNine() {
+        assertEquals(9, 5+4)
+    }
+
+    @Test
+    fun confirmEasternRedbud_outputsEasternRedbud() {
+        val plant : Plant = Plant("Cercis", "canadensis", "Eastern Redbud")
+        assertEquals("Eastern Redbud", plant.toString())
     }
 
 }
