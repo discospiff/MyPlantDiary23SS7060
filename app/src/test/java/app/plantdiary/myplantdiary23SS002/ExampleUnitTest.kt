@@ -35,4 +35,10 @@ class ExampleUnitTest {
         assertEquals(9, 5+4)
     }
 
+    @Test
+    fun confirmEasternRedbud_outputsEasternRedbud() {
+        val plant : Plant = Plant("Cercis", "canadensis", "Eastern Redbud")
+        assertEquals("Eastern Redbud", plant.toString())
+    }
+
 }
