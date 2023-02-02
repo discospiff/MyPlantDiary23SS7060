@@ -30,4 +30,9 @@ class ExampleUnitTest {
         assertEquals(8, 4+4)
     }
 
+    @Test
+    fun fivePlusFour_EqualsNine() {
+        assertEquals(9, 5+4)
+    }
+
 }
