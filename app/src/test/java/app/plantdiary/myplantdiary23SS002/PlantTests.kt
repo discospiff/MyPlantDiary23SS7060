@@ -18,7 +18,7 @@ class PlantTests {
     var allPlants : List<Plant>? = ArrayList<Plant>()
 
     @Test
-    fun `Given plant data are available when I search for Redbud then I should receive Cercis canadensis` {
+    fun `Given plant data are available when I search for Redbud then I should receive Cercis canadensis`() = runTest {
         givenPlantServiceIsInitialized()
         whenPlantDataAreReadAndParsed()
         thenPlantCollectionShouldContainCercisCandensis()
@@ -28,7 +28,7 @@ class PlantTests {
         plantService = PlantService()
     }
 
-    private suspend fun whenPlantDataAreReadAndParsed() = runTest {
+    private suspend fun whenPlantDataAreReadAndParsed()  {
         allPlants = plantService.fetchPlants();
     }
 
