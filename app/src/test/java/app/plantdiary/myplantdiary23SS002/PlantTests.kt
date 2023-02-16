@@ -1,6 +1,9 @@
 package app.plantdiary.myplantdiary23SS002
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import app.plantdiary.myplantdiary23SS002.dto.Plant
+import junit.framework.Assert.assertNotNull
+import junit.framework.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
@@ -11,6 +14,7 @@ class PlantTests {
     var rule: TestRule = InstantTaskExecutorRule()
 
     lateinit var plantService : PlantService
+    var allPlants : List<Plant>? = ArrayList<Plant>()
 
     @Test
     fun `Given plant data are available when I search for Redbud then I should receive Cercis canadensis` {
@@ -23,12 +27,20 @@ class PlantTests {
         plantService = PlantService()
     }
 
-    private fun whenPlantDataAreReadAndParsed() {
-        TODO("Not yet implemented")
+    private suspend fun whenPlantDataAreReadAndParsed() {
+        allPlants = plantService.fetchPlants();
     }
 
     private fun thenPlantCollectionShouldContainCercisCandensis() {
-        TODO("Not yet implemented")
+        assertNotNull(allPlants)
+        assertTrue(allPlants!!.isNotEmpty())
+        var containsCercisCanadensis = false
+        allPlants!!.forEach {
+            if (it.genus.equals("Cercis") && it.species.equals("canadensis")) {
+                containsCercisCanadensis = true
+            }
+        }
+        assertTrue(containsCercisCanadensis)
     }
 
 }
