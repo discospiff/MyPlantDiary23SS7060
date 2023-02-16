@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import app.plantdiary.myplantdiary23SS002.dto.Plant
 import junit.framework.Assert.assertNotNull
 import junit.framework.Assert.assertTrue
+import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
@@ -27,7 +28,7 @@ class PlantTests {
         plantService = PlantService()
     }
 
-    private suspend fun whenPlantDataAreReadAndParsed() {
+    private suspend fun whenPlantDataAreReadAndParsed() = runTest {
         allPlants = plantService.fetchPlants();
     }
 
