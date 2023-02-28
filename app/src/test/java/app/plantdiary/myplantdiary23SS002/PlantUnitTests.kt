@@ -11,7 +11,10 @@ import junit.framework.Assert.assertNotNull
 import junit.framework.Assert.assertTrue
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.newSingleThreadContext
+import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
+import org.junit.After
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
@@ -30,10 +33,16 @@ class PlantUnitTests {
 
     private val mainThreadSurrogate = newSingleThreadContext("Main Thread")
 
-
-    fun initiMocksAndMainThread() {
+    @Before
+    fun initMocksAndMainThread() {
         MockKAnnotations.init(this)
         Dispatchers.setMain(mainThreadSurrogate)
+    }
+
+    @After
+    fun tearDown() {
+        Dispatchers.resetMain()
+        mainThreadSurrogate.close()
     }
 
     @Test
