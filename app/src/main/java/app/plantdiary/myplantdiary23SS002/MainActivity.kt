@@ -13,16 +13,26 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import app.plantdiary.myplantdiary23SS002.ui.theme.MyPlantDiaryTheme
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.compose.runtime.livedata.observeAsState
 
 class MainActivity : ComponentActivity() {
+
+    // get our ViewModel from Koin
+    private val viewModel : MainViewModel by viewModel<MainViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            viewModel.fetchPlants()
+            val plants by viewModel.plants.observeAsState(initial = emptyList())
             MyPlantDiaryTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background, modifier = Modifier.fillMaxWidth()) {
                     Greeting("Android")
                 }
+                var foo = plants
+                var i = 1 + 1
             }
         }
     }
