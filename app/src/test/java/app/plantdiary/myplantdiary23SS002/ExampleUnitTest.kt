@@ -1,6 +1,5 @@
 package app.plantdiary.myplantdiary23SS002
 
-import app.plantdiary.myplantdiary23SS002.dto.Plant
 import org.junit.Test
 
 import org.junit.Assert.*

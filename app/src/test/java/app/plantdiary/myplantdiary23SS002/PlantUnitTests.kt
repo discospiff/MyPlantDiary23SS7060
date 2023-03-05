@@ -2,7 +2,6 @@ package app.plantdiary.myplantdiary23SS002
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import app.plantdiary.myplantdiary23SS002.dto.Plant
 import app.plantdiary.myplantdiary23SS002.service.PlantService
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
@@ -18,7 +17,6 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
-import org.junit.rules.Timeout
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
