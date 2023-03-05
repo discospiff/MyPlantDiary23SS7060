@@ -31,7 +31,7 @@ Use your Android device to create your own plant diary.  Take photos with the on
 
 #### Scenario
 
-As a user interested in plants, I want to be able to search plants based on any part of the name: genus, species, cultivar, or common name.  
+As a user interested in plants, I want to be able to search plants based on any part of the name: genus, species, cultivar, or common name, so that I can see a list of plants that match my search term.  
 
 #### Dependencies
 
