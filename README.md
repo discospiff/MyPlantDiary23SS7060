@@ -141,3 +141,7 @@ Common names are stated in English.
 - DevOps/Product Owner/Scrum Master: Brandan Jones  
 - Frontend Developer: Brandan Jones  
 - Integration Developer: Brandan Jone
+
+## Project Management Information System
+
+This project uses JIRA SAAS for Scrum project management.
