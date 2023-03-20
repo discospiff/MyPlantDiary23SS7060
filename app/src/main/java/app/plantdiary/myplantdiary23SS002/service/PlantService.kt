@@ -2,6 +2,7 @@ package app.plantdiary.myplantdiary23SS002.service
 
 import app.plantdiary.myplantdiary23SS002.RetrofitClientInstance
 import app.plantdiary.myplantdiary23SS002.dao.IPlantDAO
+import app.plantdiary.myplantdiary23SS002.dto.Plant
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext

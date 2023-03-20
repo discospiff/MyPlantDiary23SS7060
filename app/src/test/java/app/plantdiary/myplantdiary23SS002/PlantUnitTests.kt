@@ -2,6 +2,7 @@ package app.plantdiary.myplantdiary23SS002
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
+import app.plantdiary.myplantdiary23SS002.dto.Plant
 import app.plantdiary.myplantdiary23SS002.service.PlantService
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery

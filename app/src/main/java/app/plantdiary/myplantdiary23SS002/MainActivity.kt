@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import app.plantdiary.myplantdiary23SS002.ui.theme.MyPlantDiaryTheme
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import androidx.compose.runtime.livedata.observeAsState
+import app.plantdiary.myplantdiary23SS002.dto.Plant
 
 class MainActivity : ComponentActivity() {
 
@@ -25,7 +26,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             viewModel.fetchPlants()
-            val plants by viewModel.plants.observeAsState(initial = emptyList())
+            // val plants by viewModel.plants.observeAsState(initial = emptyList())
+            val plants = ArrayList<Plant>();
             MyPlantDiaryTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background, modifier = Modifier.fillMaxWidth()) {
