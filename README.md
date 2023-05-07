@@ -147,4 +147,4 @@ Common names are stated in English.
 This project uses JIRA SAAS for Scrum project management.
 And GitHub Projects.
 
-Adding a new contributor.
+
