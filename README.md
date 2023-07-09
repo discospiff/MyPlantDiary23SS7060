@@ -148,4 +148,4 @@ This project uses GitHub, Jira saas, and Confluence.
 
 ## Project Management Information System
 
-
+We have an experienced set of developers, code reviewers, and product owners on our team.
