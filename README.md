@@ -128,6 +128,10 @@ Common names are stated in English.
 
 **RetrofitInstance:** Boostrap class required for Retrofit.  
 
+## Project Management
+
+This project uses GitHub, Jira saas, and Confluence.
+
 **Plant:** Noun class that represents a plant.  
 
 **Specimen:** Noun class that represents a specimen.  
