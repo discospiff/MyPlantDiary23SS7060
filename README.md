@@ -144,10 +144,4 @@ Common names are stated in English.
 
 ## Project Management Information System
 
-This project uses JIRA SAAS for Scrum project management.
-And GitHub Projects.
 
-
-Another addition.
-
-I'm sauntering through Saks
