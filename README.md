@@ -27,7 +27,7 @@ Use your Android device to create your own plant diary.  Take photos with the on
 
 ## Use Case
 
-[Login] (https://github.com/discospiff/MyPlantDiary23SS7060/blob/7938bd3ef5b77ed711d183eefb4a188767c47ce6/MPDLoginUseCase.md)
+[Login](https://github.com/discospiff/MyPlantDiary23SS7060/blob/7938bd3ef5b77ed711d183eefb4a188767c47ce6/MPDLoginUseCase.md)
 
 ## Functional Requirements
 
