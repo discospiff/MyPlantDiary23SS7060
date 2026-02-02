@@ -25,6 +25,10 @@ Use your Android device to create your own plant diary.  Take photos with the on
 
 ![MyPlantDiaryFirstScreen](https://user-images.githubusercontent.com/2224876/82161817-15ee8880-986e-11ea-8cda-f04ad1412893.png)
 
+## Use Case
+
+[Login] (https://github.com/discospiff/MyPlantDiary23SS7060/blob/7938bd3ef5b77ed711d183eefb4a188767c47ce6/MPDLoginUseCase.md)
+
 ## Functional Requirements
 
 ### Requirement 100.0: Search for Plants
