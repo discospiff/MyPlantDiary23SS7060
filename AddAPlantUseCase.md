@@ -1,4 +1,5 @@
 # Add Plant Use Case
+![Use Case Diagram](https://github.com/discospiff/MyPlantDiary23SS7060/blob/1634a08fd98c95af08a4b1e16ec72a7398f5b9a5/MyPlantDiaryUseCase.jpg)
 
 **Use Case Name:** Add a Plant
 **Importance Level:** High
