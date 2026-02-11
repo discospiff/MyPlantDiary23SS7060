@@ -44,3 +44,6 @@ User adds a specimen of a plant on the MPD app.
  - User is not logged in
  - User does not login.
  - Device is out of storage
+
+# Activity Diagram
+[Add a Plant Activityu](https://github.com/discospiff/MyPlantDiary23SS7060/blob/13dcfff04b1ab1be36d99ba81bccc7a5b375bfc0/AddAPlantActivityDiagram.jpg)
